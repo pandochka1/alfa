@@ -1,0 +1,1164 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Play:wght@400;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+@media screen  and (min-width: 320px) and (max-width: 640px) { 
+    .pagecrm_business_processes{
+        color: #FFFFFF;
+        margin-bottom: 75px;
+        font-family: "Play", sans-serif;
+        
+    }
+
+    .pagecrm_business_processes h2{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        /* color: #FFFFFF; */
+        margin-bottom: 20px;
+    }
+
+    .pagecrm_business_processes img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .pagecrm_business_processes .pagecrm_business_processes_box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        column-gap: 40px;
+        row-gap: 16px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+
+    /* блок с функциями */
+    .pagecrm_crm_functions{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: max-content;
+        margin: 0 auto 75px auto;
+    }
+    .pagecrm_crm_functions .card_img{
+        width: 165px;
+        height: 114px;
+    }
+   
+    .pagecrm_crm_functions_card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 340px;
+        height: 190px;
+        border: 1px solid transparent;
+        background:linear-gradient(148deg, #9400FF 15%, rgba(198, 79, 135, 0.83) 87%)border-box;
+        box-shadow: inset 0px 0px 0px 50vw rgb(113,98,167), 0px 0px 20px 0px #D795FF, 0px 0px 4px 0px #D795FF;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .pagecrm_crm_functions_card .card_logo{
+        width: 102px;
+        height: 18px;
+    }
+
+    .pagecrm_crm_functions_card  .pagecrm_crm_functions_card_logo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(230.07deg, #FFFFFF -50.81%, #0E9DDD 94.55%);
+
+    }
+
+    .pagecrm_crm_functions_card .pagecrm_crm_functions_card_lists img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .pagecrm_crm_functions_card .pagecrm_crm_functions_card_lists>div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .pagecrm_crm_functions_card .pagecrm_crm_functions_card_lists{
+        background: #48057280;
+        border-radius: 0 10px 10px 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .pagecrm_crm_functions_card .pagecrm_crm_functions_card_lists h3{
+        font-family: "Play", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        color: transparent;
+        background-clip: text;
+        background-image: linear-gradient(176deg, #B195FF -127%, #E9C6FF 97%);
+    }
+
+    .pagecrm_crm_functions_card .pagecrm_crm_functions_card_lists p{
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+    }
+
+    /* форма, оставить заявку */
+    .pagecrm_application{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 340px;
+        height:650px;
+        padding: 44px 15px;
+        border: 2px solid transparent;
+        background: #48057280;
+        background:linear-gradient(148deg, #511b7380 100%, rgba(198, 79, 135, 0.83) 83%)border-box;
+        box-shadow: inset 0px 0px 0px 100vw #48057280,
+        0px 0px 10px 3px #9662FF;
+        overflow: hidden;
+        border-radius: 32px;
+        margin-top: 75px;
+    }
+
+    .pagecrm_application h3{
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        color: rgba(215, 152, 237, 0.83);
+    }
+
+    /* .pagecrm_application textarea{
+        width: 307px;
+        height: 110px;
+        border-radius: 10px;
+        opacity: 0px;
+        background: #48057280;;
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: justify;
+        color: #FFFFFF;
+    } */
+
+    .pagecrm_application form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pagecrm_application form input, .pagecrm_application form select,  .pagecrm_application textarea {
+        width: 307px;
+        height: 59px;
+        border: 1px solid transparent;
+        background: #48057280;
+        background: #510d7b80 padding-box, linear-gradient(148deg, #f8f3fb -20%, rgba(252, 3, 115, 0.83) 87%)border-box, ;
+        box-shadow: inset 0px 0px 0px 1vw #92339444;
+        border-radius: 10px;
+    }
+
+    .pagecrm_application form input::placeholder, .pagecrm_application form textarea::placeholder,.pagecrm_application form select  {
+        color: #FFFFFF;
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: justify;
+    }
+
+    .pagecrm_application .form_but{
+        text-align: center;
+    }
+
+
+    .pagecrm_application form select{
+        padding: 17px 24px;
+    }
+
+    .pagecrm_application form textarea{
+        height: 110px;
+    }
+
+    .pagecrm_application form textarea::placeholder{
+        color: #FFFFFF80;
+    }
+
+    .pagecrm_application form input, .pagecrm_application form textarea{
+        color: #FFFFFF;
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: justify;
+        padding: 17px 24px;
+    }
+
+    .pagecrm_application form select { 
+        appearance: none;
+    }
+
+    .pagecrm_application form select:not([multiple]) {
+        padding-right: 1.2em;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 1em) 1.4em;
+        background-size: 20px auto;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_10_565)'%3e%3cpath d='M15.1721 5.54543L8.96628 11.7697C8.8924 11.8436 8.81236 11.896 8.72617 11.9271C8.63998 11.9581 8.54763 11.9734 8.44913 11.9729C8.35062 11.9729 8.25827 11.9574 8.17208 11.9263C8.08589 11.8953 8.00585 11.8431 7.93198 11.7697L1.7077 5.54543C1.53532 5.37305 1.44913 5.15757 1.44913 4.899C1.44913 4.64042 1.54148 4.41878 1.72617 4.23409C1.91087 4.04939 2.12635 3.95704 2.37261 3.95704C2.61887 3.95704 2.83435 4.04939 3.01905 4.23409L8.44913 9.66417L13.8792 4.23409C14.0516 4.0617 14.2641 3.97551 14.5168 3.97551C14.7694 3.97551 14.9879 4.06786 15.1721 4.25256C15.3568 4.43725 15.4491 4.65273 15.4491 4.899C15.4491 5.14526 15.3568 5.36074 15.1721 5.54543Z' fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_10_565'%3e%3crect width='15' height='15' fill='white' transform='matrix(0 -1 1 0 0.5 15.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+    }
+
+    .pagecrm_application form p{
+        width: 307px;
+        height: 110px;
+        border: 1px solid transparent;
+        background: #48057280;
+        background: #510d7b80 padding-box, linear-gradient(148deg, #f8f3fb -20%, rgba(252, 3, 115, 0.83) 87%)border-box, ;
+        box-shadow: inset 0px 0px 0px 1vw #92339444;
+        border-radius: 10px;
+        display: flex;
+        color: #FFFFFF80;
+        font-family: "Play", sans-serif;;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .pagecrm_application form .form_but{
+        width: 307px;
+        padding: 10px 40px;
+        font-family: "Play", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #E9DEFF;
+        border: 2px solid transparent;
+        background: #1E0044;
+        background:linear-gradient(0deg, #8FDDFF, #8FDDFF) border-box,linear-gradient(93deg, #383FEC 49%, #23FFFF 87%) border-box;
+        box-shadow: inset 0px 0px 0px 10vw #1E0044, 0px 0px 3.15px 0px #A22DF71A, 0px 0px 13px 0px #A22DF71A,0px 0px 13px 0px #A22DF71A, 0px 0px 25.48px 0px #A22DF71A,0px 0px 46.85px 0px #A22DF71A, 0px 0px 19px 9px #A22DF71A ;
+        border-radius: 10px;
+    }
+
+    /* кому полезна CRM */
+    .pagecrm_benefit{
+        margin-bottom: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .pagecrm_benefit h3{
+        font-family: "Play", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .pagecrm_benefit img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .pagecrm_benefit .pagecrm_benefit_block{
+        width: 340px;
+        height: 244px;
+        border-radius: 20px;
+        background: linear-gradient(90deg, rgba(177, 149, 255, 0.7) 0%, rgba(177, 149, 255, 0.42) 0.01%, rgba(44, 48, 83, 0) 100%);
+    }
+
+    .pagecrm_benefit .pagecrm_benefit_block div{
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .pagecrm_benefit .pagecrm_benefit_block div p{
+        font-family: "Play", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    /* crm для бизнеса */
+    .pagecrm_business{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 75px;
+    }
+
+    .pagecrm_business .pagecrm_business_headers{
+        margin-bottom: 25px;
+    }
+
+    .pagecrm_business .pagecrm_business_headers h3{
+        font-family: "Play", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .pagecrm_business .pagecrm_business_headers h4{
+        font-family: "Play", sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(176.42deg, #B195FF -126.75%, #D795FF 97.05%);
+    }
+
+    .pagecrm_business .pagecrm_business_block{
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        border-radius: 30px;
+        background: #451a68;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .pagecrm_business .pagecrm_business_block .pagecrm_business_block_img{
+        width: 273px;
+        height: 185px;
+        border-radius: 30px;
+        background: linear-gradient(68.89deg, #1F0B32 3.44%, #1D1B7A 98.64%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .pagecrm_business .pagecrm_business_block .pagecrm_business_block_img img{
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+    }
+
+    .pagecrm_business .pagecrm_business_block .pagecrm_business_block_img h6{
+        font-family: "Play", sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(176.42deg, #B195FF -126.75%, #D795FF 97.05%);
+        
+
+    }
+
+    .pagecrm_business .pagecrm_business_block h4{
+        font-family: "Play", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: left;
+        color: #FFFFFF;
+
+        width: 272px;
+        margin: 0 auto;
+    }
+
+    .pagecrm_business .pagecrm_business_block p{
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #FFFFFF;
+        width: 272px;
+        margin: 0 auto;
+    }
+
+    .pagecrm_business .pagecrm_business_block h5{
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15.4px;
+        text-align: left;
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(176.42deg, #B195FF -126.75%, #D795FF 97.05%);
+        width: 272px;
+        margin: 0 auto;
+    }
+
+    .pagecrm_business .pagecrm_business_block .pagecrm_business_block_but{
+        width: 155px;
+        height: 46px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(240.52deg, #59F8D2 7%, rgba(116, 223, 221, 0.43) 28.48%, rgba(161, 180, 239, 0.54) 64.29%, rgba(202, 142, 255, 0.55) 96.31%);
+        margin: 0 auto;
+    }
+
+    .pagecrm_business .pagecrm_business_block .pagecrm_business_block_but *{
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        border-radius: 10px;
+        background: #451a68;
+        border: none;
+        font-family: "Play", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .pagecrm_business .pagecrm_background_fill{
+        width: 340px;
+        height: 383px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:  linear-gradient(147.77deg, #9400FF 14.56%, rgba(198, 79, 135, 0.83) 86.63%);
+        box-shadow: 0px 0px 10px 0px #D795FF80;
+
+    }
+    
+
+    /* стоимость подключения */
+    .pagecrm_connection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 75px;
+    }
+
+    .pagecrm_connection h2{
+        font-family: "Play", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+    }
+
+    .pagecrm_connection .pagecrm_connection_card{
+        width: 340px;
+        height: 217px;
+        border-radius: 15px;
+        background: linear-gradient(176.42deg, #B195FF -126.75%, #D795FF 97.05%);
+        box-shadow: 0px 0px 20px 0px #D795FF, 0px 0px 4px 0px #D795FF;
+        
+    }
+
+    .pagecrm_connection .pagecrm_connection_card>div{
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        border-radius: 15px;
+        background: #301049;
+        border: none;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .pagecrm_connection .pagecrm_connection_card .pagecrm_connection_card_inform_price{
+        background: #cb99ea26;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 50px;
+    }
+
+    .pagecrm_connection .pagecrm_connection_card .pagecrm_connection_card_inform_price .text{
+        font-family: "Play", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+        color: #FFFFFF;
+        width: 60%;
+    }
+
+    .pagecrm_connection .pagecrm_connection_card .pagecrm_connection_card_inform_price .price{
+        font-family: "Play", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(176.42deg, #B195FF -126.75%, #D795FF 97.05%);
+    }
+
+    .pagecrm_connection .pagecrm_connection_card .pagecrm_connection_card_inform_purchase{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+    .pagecrm_connection .pagecrm_connection_card .pagecrm_connection_card_inform_purchase img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .pagecrm_connection .pagecrm_connection_card .pagecrm_connection_card_but{
+        width: 206px;
+        height: 59px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(0deg, #8FDDFF, #8FDDFF),linear-gradient(93deg, #383FEC 49.3%, #23FFFF 87.76%);
+        margin: auto;
+    }
+
+    .pagecrm_connection .pagecrm_connection_card .pagecrm_connection_card_but button{
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        border-radius: 10px;
+        background: #1E0044;
+        border: none;
+        font-family: "Play", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .pagecrm_connection .pagecrm_connection_card .pagecrm_connection_card_but img{
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Заполните форму */
+
+    .pagecrm_Feedback{
+        width: 344px;
+        height: 438px;
+        border-radius: 32px;
+        background: linear-gradient(266.77deg, #FFFFFF -11.99%, #D795FF 42.41%, #7BC2FE 91.84%);
+        box-shadow: 0px 0px 10px 0px #9662FF;
+        margin: 0 auto 75px auto;
+    }
+
+    .pagecrm_Feedback>div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px;
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        border-radius: 32px;
+        border: none;
+        background: #9577b9;
+    }
+
+    .pagecrm_Feedback>div h2{
+        font-family: "Space Grotesk", sans-serif;;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 52px;
+        text-align: center;
+        text-align: center;
+        color: transparent;    
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(176.42deg, #B195FF -126.75%, #D795FF 97.05%);
+
+    }
+
+    .pagecrm_Feedback>div p{
+        font-family: "Space Grotesk", sans-serif;;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+
+    .pagecrm_Feedback form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+    }
+    .pagecrm_Feedback .pagecrm_form_element{
+        width: 316px;
+        height: 51px;
+        border-radius: 10px;
+        background: linear-gradient(266.77deg, #FFFFFF -11.99%, #D795FF 42.41%, #7BC2FE 91.84%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .pagecrm_Feedback .pagecrm_form_element *{
+        font: inherit;
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
+        border-radius: 10px;
+        border: none;
+        background: #9577b9;
+        color: #FFFFFF;
+        padding: 14px 24px;
+    }
+
+    .pagecrm_Feedback .pagecrm_form_element ::placeholder{
+        color: #FFFFFF;
+        /* padding: 14px 24px; */
+    }
+
+    .pagecrm_Feedback .pagecrm_form_element select{
+        color: #FFFFFF;
+        padding: 14px 24px;
+        appearance: none;
+    }
+
+    .pagecrm_Feedback .pagecrm_form_element select:not([multiple]) {
+        background-repeat: no-repeat;
+        background-position: calc(100% - 1em) 0.8em;
+        background-size: 20px auto;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 15.9987L0 5.33203H20L10 15.9987Z' fill='%23fff'%3E%3C/path%3E%3C/svg%3E " );
+    }
+
+
+    .pagecrm_Feedback .pagecrm_form_element_but{
+        width: 316px;
+        height: 51px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(0deg, #8FDDFF, #8FDDFF),linear-gradient(93deg, #383FEC 49.3%, #23FFFF 87.76%);
+        margin: auto;
+        box-shadow: 0px 0px 3.15px 0px #A22DF71A, 0px 0px 6.52px 0px #A22DF71A, 0px 0px 13px 0px #A22DF71A, 0px 0px 25.48px 0px #A22DF71A, 0px 0px 46.85px 0px #A22DF71A, 0px 0px 19px 9px #A22DF71A;
+
+    }
+
+    .pagecrm_Feedback .pagecrm_form_element_but button{
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        border-radius: 10px;
+        background: #1E0044;
+        border: none;
+        font-family: "Play", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    /* НАШ ПАРТНЁР ПО CRM-СИСТЕМАМ */
+
+    .pagecrm_partners{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+
+    .pagecrm_partners h2{
+        font-family: "Play", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .pagecrm_partners img{
+        width: 340px;
+        height: 171px;
+    }
+
+    .pagecrm_partners .pagecrm_partners_block{
+        margin-top: 45px;
+    }
+
+    .pagecrm_partners .pagecrm_partners_block div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #00FFB7;
+        border-left: none;
+        border-right: none;
+    }
+
+    .pagecrm_partners .pagecrm_partners_block div:nth-child(2){
+        border-top: none;
+    }
+
+    .pagecrm_partners .pagecrm_partners_block p{
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 54px;
+        text-align: left;
+        width: 279px;
+        height: 54px;
+        color: #FFFFFF;
+    }
+
+    /* Напишите нам! */
+    .pagecrm_write{
+        /* margin-bottom: 75px; */
+        width: 340px;
+        margin: 0 auto 75px auto;
+    }
+
+    .pagecrm_write .pagecrm_write_text h2{
+        font-family: "Play", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .pagecrm_write .pagecrm_write_text p{
+        font-family: "Play", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        width: 284px;
+        height: 90px;
+        color: #FFFFFF;
+        margin: 0 auto 10px auto;
+
+    }
+
+    .pagecrm_write_form{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 270px;
+        margin-bottom: 10px;
+    }
+
+    .pagecrm_write_form img{
+        width: 341px;
+        height: 186px;
+        opacity: 0px;
+        grid-column: 1;
+        grid-row: 1;
+        align-self: end;
+    }
+
+    /* инпуты */
+    .pagecrm_write_form form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 247px;
+        height: 252px;
+        border-radius: 20px;
+        background: #3E338E;
+        opacity: 0px;
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+    }
+    .pagecrm_write_form form label {
+        position: relative;
+    }
+      
+    .pagecrm_write_form form label span {
+        position: absolute;
+        top: 3px;
+        left: 12px;
+    }
+      
+    .pagecrm_write_form form  input {
+        padding: 4px 10px;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 212px;
+        height: 27px;
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        background: #FFFFFF80;
+        border: none;
+        border: 1px solid #0A142F4D;
+        border-radius: 5px;
+
+    }
+      
+    .pagecrm_write_form form  input:invalid + span:before {
+        content: attr(placeholder);
+        position: relative;
+        color: #383838;
+        ;
+    }
+      
+    .pagecrm_write_form form  input:invalid + span:after {
+        content: '*';
+        position: relative;
+        color: #383838;
+    }
+
+    .pagecrm_write_form form  input::placeholder{
+        color: #383838;
+    }
+
+    .pagecrm_write_form form  textarea{
+        width: 212px;
+        height: 73px;
+        border-radius: 5px;
+        background: #FFFFFF80;
+        border: 1px solid #0A142F4D;
+        border-radius: 5px;
+    }
+
+    .pagecrm_write_form form  textarea::placeholder{
+        color: #383838;
+        padding: 4px 10px;
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    .pagecrm_write_form form .but{
+        width: 141px;
+        height: 33px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(0deg, #8FDDFF, #8FDDFF),linear-gradient(93deg, #383FEC 49.3%, #23FFFF 87.76%);
+        margin: 0 auto;
+        box-shadow: 0px 0px 3.15px 0px #A22DF71A, 0px 0px 6.52px 0px #A22DF71A, 0px 0px 13px 0px #A22DF71A, 0px 0px 25.48px 0px #A22DF71A, 0px 0px 46.85px 0px #A22DF71A, 0px 0px 19px 9px #A22DF71A;
+
+    }
+
+    .pagecrm_write_form form .but button{
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        border-radius: 10px;
+        background: #1E0044;
+        border: none;
+        font-family: "Play", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.2px;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+
+
+    /* модальные окна */
+    /* заявка успешно отправлена */
+    .pagecrm_successfully_sent_overlay, .pagecrm_successfully_sent_overlay_error {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.413);
+        display: none;
+    }
+    .pagecrm_successfully_sent_overlay .pagecrm_successfully_sent_overlay_popup, .pagecrm_successfully_sent_overlay_error .pagecrm_successfully_sent_overlay_popup{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        width: 340px;
+        height: 208px;
+        border-radius: 20px;
+        background: linear-gradient(0deg, #8FDDFF, #8FDDFF),linear-gradient(93deg, #383FEC 49.3%, #23FFFF 87.76%);
+        box-shadow: 0px 0px 20px 0px #D795FF, 0px 0px 4px 0px #D795FF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pagecrm_successfully_sent_overlay .pagecrm_successfully_sent_overlay_popup>div, .pagecrm_successfully_sent_overlay_error .pagecrm_successfully_sent_overlay_popup>div {
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        border-radius: 20px;
+        background: #634787;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagecrm_successfully_sent_overlay .pagecrm_successfully_sent_overlay_popup>div p, .pagecrm_successfully_sent_overlay_error .pagecrm_successfully_sent_overlay_popup>div p{
+        width: 203px;
+        height: 59px;
+        font-family: "Play", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: -0.035em;
+        text-align: center;
+    }
+
+    .pagecrm_successfully_sent_overlay .pagecrm_successfully_sent_overlay_popup>div img, .pagecrm_successfully_sent_overlay_error  .pagecrm_successfully_sent_overlay_popup>div img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .pagecrm_successfully_sent_overlay .pagecrm_successfully_sent_overlay_popup .close-popup img, .pagecrm_successfully_sent_overlay_error .pagecrm_successfully_sent_overlay_popup .close-popup img {
+        width: 23px;
+        height: 23px;
+    }
+    .pagecrm_successfully_sent_overlay .pagecrm_successfully_sent_overlay_popup .close-popup, .pagecrm_successfully_sent_overlay_error .pagecrm_successfully_sent_overlay_popup .close-popup {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+    }
+
+
+    /* МО. форма для заполнения */
+    .pagecrm_filling_overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }
+    .pagecrm_filling{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 340px;
+        height: 462px;
+        border-radius: 32px;
+        background: linear-gradient(93deg, #383FEC 49.3%, #23FFFF 87.76%);
+        box-shadow: 0px 0px 10px 0px #9662FF;
+        margin: 0 auto ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagecrm_filling .pagecrm_filling_form{
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        background: #D6B9FB;
+        border-radius: 32px;
+        padding: 40px 10px;
+    }
+
+    .pagecrm_filling .pagecrm_filling_form h2{
+        width: 273px;
+        height: 47px;
+        font-family: "Play", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 47px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0 auto;
+    }
+
+    .pagecrm_filling .pagecrm_filling_form p{
+        width: 308px;
+        height: 39px;
+        font-family: "Play", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0 auto;
+    }
+
+    /* инпуты */
+    .pagecrm_filling_form form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .pagecrm_filling_form form label {
+        position: relative;
+        width: 300px;
+        height: 55px;
+        border-radius: 10px;
+        background: linear-gradient(93deg, #383FEC 49.3%, #23FFFF 87.76%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .pagecrm_filling_form form label span {
+        position: absolute;
+        top: 18px;
+        left: 12px;
+    }
+      
+    .pagecrm_filling_form form  input {
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        padding: 4px 10px;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Play", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        background: #FFFFFF;
+        border: none;
+        border-radius: 10px;
+
+    }
+      
+    .pagecrm_filling_form form  input:invalid + span:before {
+        content: attr(placeholder);
+        position: relative;
+        color:#00000080;
+    }
+      
+    .pagecrm_filling_form form  .mail input:invalid + span:after {
+        content: '*';
+        position: relative;
+        color: #00000080;
+    }
+
+    .pagecrm_filling_form form input::placeholder{
+        color: #00000080;
+    }
+
+    .pagecrm_filling_form form .but{
+        width: 228px;
+        height: 63px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(0deg, #8FDDFF, #8FDDFF),linear-gradient(93deg, #383FEC 49.3%, #23FFFF 87.76%);
+        margin: 0 auto;
+        box-shadow: 0px 0px 3.15px 0px #A22DF71A, 0px 0px 6.52px 0px #A22DF71A, 0px 0px 13px 0px #A22DF71A, 0px 0px 25.48px 0px #A22DF71A, 0px 0px 46.85px 0px #A22DF71A, 0px 0px 19px 9px #A22DF71A;
+
+    }
+
+    .pagecrm_filling_form form .but button{
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+        border-radius: 20px;
+        background: #1E0044;
+        border: none;
+        font-family: "Play", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+    .pagecrm_filling_form form .pagecrm_check{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagecrm_filling_form form .pagecrm_check>div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px
+    } 
+
+    .pagecrm_filling_form form .pagecrm_check input{
+        width: max-content;
+    }
+   
+    .pagecrm_filling_form form .pagecrm_check span,.pagecrm_filling_form form .pagecrm_check a{
+        width: 222px;
+        font-family: "Play", sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+    } 
+   
+
+
+
+
+}
+

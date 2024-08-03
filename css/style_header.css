@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Play:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+@media screen  and (min-width: 320px) and (max-width: 640px) { 
+    /* мобильная версия, верстала ее первой */
+    body{
+        padding: 0 10px;
+        background-image: url('../images/Фон_Моб_CRM.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
+
+    nav{
+        display: grid;
+        gap: 35%;
+        grid-template-columns: repeat(2,1fr);
+        margin: 16px 0;
+    }
+
+    nav .pagecrm_logo img{
+        width: 102px;
+        height: 16px;
+    }
+
+    nav .pagecrm_links, nav .pagecrm_but, nav .pagecrm_telephone img{
+        display: none
+    }
+
+    nav .pagecrm_telephone img{
+        width: 25px;
+        height: 25px;
+    }
+    nav .pagecrm_telephone{
+        font-weight: 500;
+        line-height: 11px;
+        font-size: 11px;
+        color: #FFFFFF;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 3px;
+    }
+
+    .pagecrm_hamburger{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 10fr;
+        gap: 15px;
+    }
+    /* поиск */
+    .pagecrm_hamburger .pagecrm_search form {
+        width: 96%;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        border: 1px solid transparent;
+        background: rgb(113,98,167);
+        background:linear-gradient(266deg, rgba(255,255,255,1) -12%, rgba(158,149,255,1) 43%, rgba(255,255,255,1) 92%)border-box;
+        box-shadow: inset 0px 0px 0px 10vw rgb(113,98,167);
+        border-radius: 420px;
+    }
+
+    .pagecrm_search input, .pagecrm_search  button {
+        border: none;
+        background: transparent;
+    }
+    .pagecrm_search img{
+        width: 18px;
+        height: 18px;
+        color: #FFFFFF;
+        cursor: pointer;
+        margin-top: 4px;
+    }
+    .pagecrm_search input {
+        height: 25px;
+    }
+
+    .pagecrm_bread_crumbs{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-family: "Play", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 12px 0;
+        margin-top: 5px;
+        height: 36px;
+    }
+    
+    .pagecrm_bread_crumbs a{
+        color: #E9DEFF;
+        text-decoration: none;
+    }
+    .pagecrm_bread_crumbs img{
+        width: 5px;
+        height: 9px;
+    }
+
+    /* блок с изображением */
+    .pagecrm_greetings{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .pagecrm_greetings img{
+        width: 340px;
+    }
+
+    .pagecrm_greetings h1{
+        font-family: "Play", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+    .pagecrm_greetings .pagecrm_greetings_but{
+        padding: 10px 40px;
+        font-family: "Play", sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #EBE3FF;
+        border: 2px solid transparent;
+        background: #B195FF80;
+        background:linear-gradient(240deg, rgba(89,248,210,1) 7%, rgba(116,223,221,0.43) 28%, rgba(161,180,239,0.54) 64%, rgba(202,142,255,0.55) 96%) border-box;
+        box-shadow: inset 0px 0px 0px 10vw #B195FF, 0px 0px 10px 1px #D795FF;
+        border-radius: 20px;
+        margin-bottom: 75px;
+        text-decoration: none;
+    }
+
+    .pagecrm_quis {
+        width: 55px;
+        padding: 9px 12px;
+        position: fixed;
+        top: 185px;
+        right: 0;
+        z-index: 996;
+        overflow: hidden;
+        background: rgba(29, 1, 65, 0.6);
+        border-radius: 20px 0px 0px 20px;
+      }
+      
+      .pagecrm_quis__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+      
+      .pagecrm_quis__list::after {
+        width: 38px;
+        height: 1px;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -3px;
+        background: #ECECEC;
+        margin: auto;
+        opacity: 0.5;
+      }
+      
+      .pagecrm_quis__item {
+        height: 50px;
+        width: 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-sizing: border-box; */
+        filter: drop-shadow(0px 0px 10.6176px #00FFE1) drop-shadow(0px 0px 3.0336px #00FFE1) drop-shadow(0px 0px 1.5168px #00FFE1);
+        animation: quis linear infinite;
+      }
+
+      .pagecrm_quis__item:first-of-type svg {
+        width: 14px;
+      }
+      
+      .pagecrm_quis__item:last-of-type svg {
+        width: 22px;
+      }
+
+      @keyframes quis {
+        0% {
+          filter: drop-shadow(0px 0px 10.6176px #00FFE1) drop-shadow(0px 0px 2.0336px #00FFE1) drop-shadow(0px 0px 1.5168px #00FFE1);
+        }
+        50% {
+          filter: drop-shadow(0px 0px 10.6176px #00FFE1) drop-shadow(0px 0px 5.0336px #00FFE1) drop-shadow(0px 0px 2.5168px #00FFE1);
+        }
+        100% {
+          filter: drop-shadow(0px 0px 10.6176px #00FFE1) drop-shadow(0px 0px 2.0336px #00FFE1) drop-shadow(0px 0px 1.5168px #00FFE1);
+        }
+      }
+
+
+    /* подвал */
+    /* карта */
+      
+    .pagecrm_contacts{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 75px;
+    }
+    .pagecrm_contacts h2{
+        font-family: "Play", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 37px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .pagecrm_contacts>p{
+        width: 297px;
+        height: 172px;
+        font-family: "Play", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        color: #DDDDDD;
+    }
+
+    .pagecrm_contacts .pagecrm_contacts_map{
+        width: 341px;
+        height: 203px;
+        border-radius: 10px;
+        background: linear-gradient(176.42deg, #B195FF -126.75%, #D795FF 97.05%);
+        box-shadow: 0px 0px 20px 0px #D795FF, 0px 0px 30px 0px #D795FF;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagecrm_contacts .pagecrm_contacts_map>div{
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
+        border-radius: 10px;
+    }
+
+    /* копирайт */
+    .pagecrm_copyright{
+        margin-bottom: 75px;
+    }
+
+    .pagecrm_copyright .pagecrm_copyright_logo{
+        width: 226px;
+        height: 36px;
+        display: block;
+        margin: 40px auto 0 auto;
+    }
+
+    .pagecrm_copyright .pagecrm_copyright_links{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin: 40px 0 10px 0;
+    }
+
+    .pagecrm_copyright .pagecrm_copyright_links a{
+        text-decoration: none;
+    }
+
+    .pagecrm_copyright .pagecrm_copyright_links img{
+        width: 20px;
+        height: 15px;
+    }
+
+    .pagecrm_copyright .pagecrm_copyright_copy a{
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .pagecrm_copyright .pagecrm_copyright_copy{
+        font-family: "Play", sans-serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+}
+
+@media screen  and (min-width: 640px) and (max-width: 980px) {
+    
+}
+
+@media screen  and (min-width: 980px) and (max-width: 1400px) {
+    
+}
+
+@media screen  and (min-width: 1400px) and (max-width: 1600px) {
+    
+}
+
+@media screen  and (min-width: 1600px){
+    
+}
